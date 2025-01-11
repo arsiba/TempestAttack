@@ -1,6 +1,4 @@
----
-[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)  
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.en.md)
+[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)  [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.en.md)
 
 # 🌐 **TEMPEST – Eavesdropping on Electromagnetic Emissions**  
 
