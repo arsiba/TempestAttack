@@ -1,3 +1,7 @@
+[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.en.md)
+
+
 # 🌐 **TEMPEST** – Abhören elektromagnetischer Emissionen  
 
 > **⚡️ Ein TEMPEST-Angriff** nutzt elektromagnetische Emissionen, Geräusche und Vibrationen, um Informationen über das Ziel zu erhalten. Hier wird das Bildsignal eines Monitors extrahiert und angezeigt – möglich mit einem Software Defined Radio (SDR) und entsprechender Software.  
