@@ -5,7 +5,7 @@
 
 ---
 
-![Demo Video](media/TempestDemo.mp4)
+**Demo-Video:** [TempestDemo.mp4](media/TempestDemo.mp4)  
 
 ---
 
