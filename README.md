@@ -1,16 +1,14 @@
-[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)
+---
+[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)  
 [![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.en.md)
-
 
 # 🌐 **TEMPEST** – Abhören elektromagnetischer Emissionen  
 
 > **⚡️ Ein TEMPEST-Angriff** nutzt elektromagnetische Emissionen, Geräusche und Vibrationen, um Informationen über das Ziel zu erhalten. Hier wird das Bildsignal eines Monitors extrahiert und angezeigt – möglich mit einem Software Defined Radio (SDR) und entsprechender Software.  
 
-
-
 🎥 **Demo-Video:** [📁 TempestDemo.mp4](media/TempestDemo.mp4)  
 
----  
+---
 
 ## 🛠️ Software und Hardware  
 
@@ -20,8 +18,8 @@ Eine der folgenden Programme zur Rekonstruktion des empfangenen Bildes wird ben�
 - [gr-Tempest](https://github.com/git-artes/gr-tempest)  
 - [deep-Tempest](https://github.com/emidan19/deep-tempest)  
 
-  Zusätzlich wird eine klassische SDR-Software wie [HDSDR](https://hdsdr.de/) benötigt, um die Frequenz zu finden.  
-  Ein [Demo-Video](https://github.com/eried/Research/blob/master/HackRF/TempestSDR/tempest_test_elize_song.mp4) ist ebenfalls nützlich.  
+Zusätzlich wird eine klassische SDR-Software wie [HDSDR](https://hdsdr.de/) benötigt, um die Frequenz zu finden.  
+Ein [Demo-Video](https://github.com/eried/Research/blob/master/HackRF/TempestSDR/tempest_test_elize_song.mp4) ist ebenfalls nützlich.  
 
 ### 📡 **Empfohlene Hardware:**  
 - **Einfaches SDR-Gerät:** [RTL-SDR auf Amazon](https://www.amazon.de/DVB-T-DAB-Stick-RTL2832U-Chipsatz/dp/B0C4DXV2CC/)  
@@ -31,14 +29,44 @@ Eine der folgenden Programme zur Rekonstruktion des empfangenen Bildes wird ben�
 | :---------------------------------------------: |  
 | *HackRF One + Portapack und 32dBi Antenne (SDR)* |  
 
----  
+---
+
+## 🧪 Versuchsaufbau  
+
+| ![Skizze des Versuchsaufbau](images/SkizzeVersuchsaufbau.png) |  
+| :---------------------------------------------: |  
+| *Skizze des Versuchsaufbau* |  
+
+### Zielsystem (links):  
+   - Computer mit Monitor über VGA/HDMI verbunden.
+
+### Angreifendes System (rechts):  
+   - Ausgestattet mit Software Defined Radio (SDR).  
+   - Geeignete Antenne je nach Distanz zum Ziel.  
+   - Software wie TempestSDR zur Rekonstruktion des Bildes.
+
+| ![Versuchsaufbau](images/Versuchsaufbau.png) |  
+| :---------------------------------------------: |  
+| *Versuchsaufbau* |  
+
+   - Links: Zielsystem, über VGA an Monitor angeschlossen  
+   - Mitte: HackRF (Portapack) und omnidirektionale Antenne  
+   - Rechts: Angreifendes System, mit HackRF (Portapack) angeschlossen  
+
+```
+⚠️ Hinweis:
+Es besteht keine Verbindung zwischen Ziel und Angriffssystem! 
+Mit dem abgebildeten Versuchsaufbau konnten Angriffe aus bis zu 2m erfolgreich durchgeführt werden.
+```
+
+---
 
 ## 🔧 Vorbereitung und Installation  
 
-- Installation von **TempestSDR**, **gr-tempest** oder **deep-tempest**.  
-- Siehe die Anleitungen in den jeweiligen GitHub-Repositories.  
+1. Installation von **TempestSDR**, **gr-tempest** oder **deep-tempest**.  
+2. Siehe die Anleitungen in den jeweiligen GitHub-Repositories.  
 
----  
+---
 
 ## 🕵️‍♂️ Durchführung des Angriffs  
 
@@ -65,14 +93,13 @@ Eine der folgenden Programme zur Rekonstruktion des empfangenen Bildes wird ben�
 | :------------------------------------------: |  
 | *🎶 Screenshot aus dem Test-Video zur Frequenzsuche (Für Elise)* |  
 
-
 ```
 ⚠️ Wichtig:
 Dieses Vorgehen dient nur der Veranschaulichung.  
 In realistischen Angriffsszenarien wird die Monitor-Frequenz basierend auf Parametern wie Größe, Auflösung und Frequenz berechnet.
 ```
 
----  
+---
 
 ### 2️⃣ **Konfiguration von TempestSDR**  
 
@@ -91,7 +118,7 @@ In realistischen Angriffsszenarien wird die Monitor-Frequenz basierend auf Param
 | :------------------------------------------------: |  
 | *⚙️ TempestSDR: Monitorparameter (links) und geladener Treiber (rechts)* |  
 
----  
+---
 
 ### 3️⃣ **Bildrekonstruktion**  
 
@@ -106,14 +133,14 @@ In realistischen Angriffsszenarien wird die Monitor-Frequenz basierend auf Param
 | :---------------------------------------------: |  
 | *🖼️ Abgefangenes Bild* |  
 
----  
+---
 
 ## 📚 Links zu den verwendeten Papern  
 
 - [Deep-Tempest](https://arxiv.org/pdf/2407.09717v1)  
 - [gr-Tempest](https://iie.fing.edu.uy/publicaciones/2022/LBCS22/LBCS22.pdf)  
 
----  
+---
 
 ## 📂 Weitere Materialien  
 
@@ -126,3 +153,5 @@ Im Ordner `media/` befinden sich:
   - **Bester Angriff auf einen Canvas:** [BestAttempt.mp4](media/BestAttempt.mp4)  
   - **Einstellungen von TempestSDR:** [TempestSDR.mp4](media/TempestSDR.mp4)  
   - **Angriff auf eine Webpage:** [Webpage.mp4](media/Webpage.mp4)  
+
+---  

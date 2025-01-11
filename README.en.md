@@ -1,7 +1,9 @@
-[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)
-
+---
+[![de](https://img.shields.io/badge/lang-de-red.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.md)  
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/arsiba/TempestAttack/blob/main/README.en.md)
 
 # 🌐 **TEMPEST – Eavesdropping on Electromagnetic Emissions**  
+
 > **⚡️ A TEMPEST attack** uses electromagnetic emissions, sounds, and vibrations to gather information about the target. In this case, the image signal of a monitor is extracted and displayed – possible with a Software Defined Radio (SDR) and appropriate software.  
 
 🎥 **Demo Video:** [📁 TempestDemo.mp4](media/TempestDemo.mp4)  
@@ -29,10 +31,40 @@ A [Demo Video](https://github.com/eried/Research/blob/master/HackRF/TempestSDR/t
 
 ---
 
+## 🧪 Experimental Setup  
+
+| ![Scetch of the experimental setup](images/SkizzeVersuchsaufbau.png) |  
+| :---------------------------------------------: |  
+| *Scetch of the experimental setup* |  
+
+### Target (left):  
+   - Computer with monitor connected via VGA/HDMI.
+
+### Attacking system (right):  
+   - Equipped with Software Defined Radio (SDR).  
+   - Suitable antenna depending on distance to target.  
+   - Software such as TempestSDR for reconstructing the image.
+
+| ![Experimental setup](images/Versuchsaufbau.png) |  
+| :---------------------------------------------: |  
+| *Experimental setup* |  
+
+   - left: Target, connected via VGA to a monitor  
+   - middle: HackRF (Portapack) with omnidirectional antenna  
+   - right: Attacking system, HackRF (Portapack) connected  
+
+```
+⚠️ Disclaimer:
+There is no connection between the targeted and attacking systems!
+With the experimental setup shown, attacks from distances of up to 2m have been successful.
+```
+
+---
+
 ## 🔧 Preparation and Installation  
 
-- Installation of **TempestSDR**, **gr-tempest**, or **deep-tempest**.  
-- See the instructions in the respective GitHub repositories.  
+1. Installation of **TempestSDR**, **gr-tempest**, or **deep-tempest**.  
+2. See the instructions in the respective GitHub repositories.  
 
 ---
 
@@ -53,8 +85,11 @@ A [Demo Video](https://github.com/eried/Research/blob/master/HackRF/TempestSDR/t
 | :------------------------------------------: |  
 | *Screenshot from the Test Video for Frequency Search (Für Elise)* |  
 
-**⚠️ Important:** This procedure is only for illustration.  
+```
+⚠️ Important: 
+This procedure is only for illustration.  
 In realistic attack scenarios, the monitor frequency is calculated based on parameters such as size, resolution, and frequency.  
+```
 
 ---
 
@@ -99,3 +134,5 @@ In the `media/` folder, you'll find:
   - **Best Attempt on a Canvas:** [BestAttempt.mp4](media/BestAttempt.mp4)  
   - **TempestSDR Settings:** [TempestSDR.mp4](media/TempestSDR.mp4)  
   - **Attack on a Webpage:** [Webpage.mp4](media/Webpage.mp4)  
+
+---
